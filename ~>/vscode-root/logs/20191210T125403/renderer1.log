@@ -1,0 +1,13 @@
+[2019-12-10 13:09:12.527] [renderer1] [error] TreeError [FileExplorer] Data tree node not found: [object Object]: Error: TreeError [FileExplorer] Data tree node not found: [object Object]
+    at Z.getDataNode (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1060:908)
+    at Z.rerender (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1058:537)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5871:163
+    at Array.forEach (<anonymous>)
+    at e.onCopyItems (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5871:142)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5863:164
+    at c.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:115:286)
+    at e.setToCopy (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4425:359)
+    at t.pasteFileHandler (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5815:83)
+    at processTicksAndRejections (internal/process/task_queues.js:89:5)
+    at async o.run (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:141:601)
+    at async x.runAction (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2995:854)

@@ -1,0 +1,54 @@
+{%extends 'base/base.html'%}
+{% load bootstrap4 %}
+
+{% block content%}
+<br>
+<br>
+
+<div style=" background-image: url('/static/pics/download.webp'); color:white; padding-top: 60px; padding-left: 20px; padding-bottom: 60px; " id="moda">
+    
+    <p>{{date|date:"l d F Y"}}</p> 
+    <h2 style="color:white;">Ready to give your preloved item a new life? <br>
+        Snap, list, and sell, for free.</h2>
+       
+    {% if request.user.sell.status %}
+    <div class="button-8">
+        <div class="eff-8"></div>
+        <a href="">Sell Now </a>
+    </div>
+    {% endif %}
+    
+</div>
+<div class="container-fluid">
+        <br>
+<div class="row">
+  {% if items %}
+   
+  {% for item in items %}
+  <div class="col-md-3">
+      <div class="card">
+          <div class="card-header">
+                  {% if item.seller.profile.profile_pic %}
+                  <section> <img style="border-radius: 50% ;" class=" img-circle"
+                  src="{{ item.seller.profile.profile_pic.url}}" alt="" width="50px" height="50px""> <a href="/profiles/{{ item.profile.user.id}}" style="color:black">{{item.seller.username}}</a>  </section>
+                  {% else %}
+                  <img style="border-radius: 50% ;" class=" img-circle"
+                  src="https://www.bristolbrewing.com/wp-content/uploads/2017/08/default-avatar.png" alt="" width="50px" height="50px""> <a href="/profiles/{{ item.profile.user.id}}" style="color:black">{{item.seller.username}}</a></section> 
+                                  
+                  {% endif %}
+              <small style="font-size: 10px;">Posted {{item.posted_time|timesince}} ago</small>
+
+          </div>
+          <div class="card-body">
+                  <a href="/items/{{ item.id}}"><img class="img-responsive" src="{{item.image.url}}" alt="" width="100%" height="100%"></a>
+          </div>
+      </div>
+  </div>
+{% endfor%}
+{% else %}
+<h1>{{keyword |upper}} CATEGORY IS EMPTY</h1>
+{% endif %}
+</div>
+
+</div>
+{% endblock%}

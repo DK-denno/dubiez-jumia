@@ -1,0 +1,44 @@
+[2019-12-10 12:54:08.330] [exthost] [info] extension host started
+[2019-12-10 12:54:08.353] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features {"startup":false,"extensionId":{"value":"vscode.css-language-features","_lower":"vscode.css-language-features"},"activationEvent":"onLanguage:css"}
+[2019-12-10 12:54:08.354] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/css-language-features/client/dist/cssMain
+[2019-12-10 12:54:08.537] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":false,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"onLanguage:css"}
+[2019-12-10 12:54:08.537] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/emmet/dist/extension
+[2019-12-10 12:54:08.592] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2019-12-10 12:54:08.592] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2019-12-10 12:54:08.612] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.git","_lower":"vscode.git"},"activationEvent":"*"}
+[2019-12-10 12:54:08.612] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/git/dist/main
+[2019-12-10 12:54:08.726] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2019-12-10 12:54:08.726] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2019-12-10 12:54:08.815] [exthost] [info] ExtensionService#_doActivateExtension eamodio.gitlens {"startup":true,"extensionId":{"value":"eamodio.gitlens","_lower":"eamodio.gitlens"},"activationEvent":"*"}
+[2019-12-10 12:54:08.815] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/eamodio.gitlens-10.2.0/dist/extension
+[2019-12-10 12:54:13.630] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"extensionId":{"value":"vscode.html-language-features","_lower":"vscode.html-language-features"},"activationEvent":"onLanguage:html"}
+[2019-12-10 12:54:13.630] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain
+[2019-12-10 12:54:14.298] [exthost] [info] eager extensions activated
+[2019-12-10 12:58:46.741] [exthost] [info] ExtensionService#_doActivateExtension vscode.python {"startup":false,"extensionId":{"value":"vscode.python","_lower":"vscode.python"},"activationEvent":"onLanguage:python"}
+[2019-12-10 12:58:46.741] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/python/dist/pythonMain
+[2019-12-10 12:58:46.820] [exthost] [info] ExtensionService#_doActivateExtension ms-python.python {"startup":false,"extensionId":{"value":"ms-python.python","_lower":"ms-python.python"},"activationEvent":"onLanguage:python"}
+[2019-12-10 12:58:46.820] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/ms-python.python-2019.11.50794/out/client/extension
+[2019-12-10 13:04:03.692] [exthost] [error] [ms-python.python] provider FAILED
+[2019-12-10 13:04:03.692] [exthost] [error] TypeError: Cannot read property 'length' of null
+	at t.ItemInfoSource.getSignature (/root/.vscode/extensions/ms-python.python-2019.11.50794/out/client/extension.js:1:586502)
+	at /root/.vscode/extensions/ms-python.python-2019.11.50794/out/client/extension.js:1:585350
+	at Array.forEach (<anonymous>)
+	at t.ItemInfoSource.getItemInfoFromHoverResult (/root/.vscode/extensions/ms-python.python-2019.11.50794/out/client/extension.js:1:585325)
+	at t.ItemInfoSource.getItemInfoFromText (/root/.vscode/extensions/ms-python.python-2019.11.50794/out/client/extension.js:1:584305)
+	at async l.resolveCompletionItem (/root/.vscode/extensions/ms-python.python-2019.11.50794/out/client/extension.js:1:574950)
+[2019-12-10 13:09:17.596] [exthost] [error] [ms-python.python] provider FAILED
+[2019-12-10 13:09:17.596] [exthost] [error] TypeError: Cannot read property 'length' of null
+	at t.ItemInfoSource.getSignature (/root/.vscode/extensions/ms-python.python-2019.11.50794/out/client/extension.js:1:586502)
+	at /root/.vscode/extensions/ms-python.python-2019.11.50794/out/client/extension.js:1:585350
+	at Array.forEach (<anonymous>)
+	at t.ItemInfoSource.getItemInfoFromHoverResult (/root/.vscode/extensions/ms-python.python-2019.11.50794/out/client/extension.js:1:585325)
+	at t.ItemInfoSource.getItemInfoFromText (/root/.vscode/extensions/ms-python.python-2019.11.50794/out/client/extension.js:1:584305)
+	at async l.resolveCompletionItem (/root/.vscode/extensions/ms-python.python-2019.11.50794/out/client/extension.js:1:574950)
+[2019-12-10 13:37:13.558] [exthost] [error] [ms-python.python] provider FAILED
+[2019-12-10 13:37:13.559] [exthost] [error] TypeError: Cannot read property 'length' of null
+	at t.ItemInfoSource.getSignature (/root/.vscode/extensions/ms-python.python-2019.11.50794/out/client/extension.js:1:586502)
+	at /root/.vscode/extensions/ms-python.python-2019.11.50794/out/client/extension.js:1:585350
+	at Array.forEach (<anonymous>)
+	at t.ItemInfoSource.getItemInfoFromHoverResult (/root/.vscode/extensions/ms-python.python-2019.11.50794/out/client/extension.js:1:585325)
+	at t.ItemInfoSource.getItemInfoFromText (/root/.vscode/extensions/ms-python.python-2019.11.50794/out/client/extension.js:1:584305)
+	at async l.resolveCompletionItem (/root/.vscode/extensions/ms-python.python-2019.11.50794/out/client/extension.js:1:574950)

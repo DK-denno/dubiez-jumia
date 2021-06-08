@@ -1,0 +1,212 @@
+{%extends 'base/base.html'%}
+{% load bootstrap4 %}
+
+{% block content%}
+<style>
+    *{
+  box-sizing: border-box;
+}
+
+.shopping-cart{
+  width: 750px;
+  height: auto;
+  margin: 5em auto;
+  background: #FFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 0.5em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* item styling */
+.title{
+  height: 3.75em;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 1.25em 1.75em;
+  color: #5E6977;
+  font-size: 1.125em;
+  font-weight: 400;
+}
+.item{
+  padding: 1.25em 1.75em;
+  height: 7.5em;
+  display: flex;
+}
+.item:nth-child(3) {
+  border-top: 1px solid #E1E8EE;
+  border-bottom: 1px solid #E1E8EE;
+}
+
+.buttons{
+  position: relative;
+  padding-top: 1.75em;
+  margin-right: 3.5em;
+}
+.delete-btn,
+.like-btn{
+  display: inline-block;
+  cursor: pointer;
+}
+.delete-btn{
+  width: 18px;
+  height: 17px;
+  background: url("https://designmodo.com/demo/shopping-cart/delete-icn.svg") no-repeat center;
+}
+.like-btn{
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  background: url("https://designmodo.com/demo/shopping-cart/twitter-heart.png");
+  width: 60px;
+  height: 60px;
+  background-size: 2900%;
+  background-repeat: no-repeat;
+}
+
+.is-active{
+  animation-name: animate;
+  animation-duration: .8s;
+  animation-iteration-count: 1;
+  animation-timing-function: steps(28);
+  animation-fill-mode: forwards;
+}
+@keyframes animate{
+  0% {background-position: left;}
+  50% {background-position: right;}
+  100% {background-position: right;}
+}
+
+.image{
+  margin-right: 50px;
+}
+.description{
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+}
+.description span{
+  display: block;
+  font-size: 1em;
+  color: #43484D;
+  font-weight: 400;
+}
+.description span:first-child{
+  margin-bottom: 5px;
+}
+.description span:last-child{
+  font-weight: 300;
+  margin-top: 8px;
+  color: #86939E;
+}
+
+.quantity{
+  padding-top: 20px;
+  margin-right: 60px;
+}
+.quantity input{
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 1em;
+  color: #43484D;
+  font-weight: 300;
+}
+button[class*=btn] {
+  width: 30px;
+  height: 30px;
+  background-color: #E1E8EE;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.minus-btn img{
+  margin-bottom: 3px;
+}
+.plus-btn img{
+  margin-top: 2px;
+}
+
+button:focus,
+input:focus{
+  outline: 0;
+}
+
+.total-price{
+  width: 83px;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 1em;
+  color: #43484D;
+  font-weight: 300;
+}
+
+
+/* media queries */
+@media (max-width: 800px) {
+  .shopping-cart{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .item {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .image img{
+    width: 50%;
+  }
+  .image,
+  .quantity,
+  .description{
+    width: 100%;
+    text-align: center;
+    margin: 6px 0;
+  }
+  .buttons{
+    margin-right: 20px;
+  }
+}
+</style>
+<div class="container">
+    {% if items %}
+
+<div class="shopping-cart">
+        <!-- Title -->
+        <div class="title">
+          Shopping Bag
+        </div>
+
+        {% for good in items %}
+        <div class="item">
+          <div class="buttons">
+            <a href="/remove/cart/{{good.id}}" class="delete-btn"></a>
+            <span class="like-btn"></span>
+          </div>
+
+          <div class="image">
+            <img src="{{good.item.image.url}}" width="100" height="100" alt="" />
+          </div>
+
+          <div class="description">
+            {{good.item.name}}
+          </div>
+
+
+
+          <div class="total-price">KES {{good.item.price}}\=</div>
+        </div>
+        {% endfor %}
+
+        <div style="margin-left:400px;" class=""> <b><h2>Total price:</h2></b>KES {{totalprice}}\=</div>
+        {% else %}
+        <h2 style="margin-left: 400px;">YOUR CART IS EMPTY</h2>
+        <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/empty-cart-2685174-2232751.png" style="margin-top: 50px;margin-left:250px;" alt="Cart is empty" width="600" height="500" >
+    </div>
+
+{% endif %}
+</div>
+
+{% endblock%}

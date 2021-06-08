@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="/"> <i class="fa fa-scribd"></i>udo <i class="fa fa-paypal"></i>ay </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <form class="form-inline my-2 my-lg-0 navbar-nav mr-auto" action="{% url 'search' %}" method="GET" >
+          <input class="form-control mr-sm-2" name="search" type="text" placeholder="Search">
+          <button class="btn btn-secondary " type="submit"> search <i class="fa fa-mouse-pointer"></i> </button>
+      </form>
+      {% if request.user.is_authenticated %}
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="/cart"> <i class="fa fa-shopping-cart"></i> cart </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/orders"> <i class="fas fa-check"></i> </i> orders </a>
+        </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/profile/">  <i class="fas fa-user-circle"></i> {{request.user}} ! </a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link" href="/auth/logout/"> <i class="fa fa-wheelchair"></i> logout ! </a>
+          </li>
+      </ul>
+
+      {% else %}
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="/auth/login/"> <i class="fa fa-blind"></i> Login </a>
+          </li>
+      </ul>
+      {% endif %}
+  </div>
+</nav>

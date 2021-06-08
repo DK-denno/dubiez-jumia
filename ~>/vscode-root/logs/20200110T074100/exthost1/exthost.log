@@ -1,0 +1,77 @@
+[2020-01-10 07:41:14.416] [exthost] [info] extension host started
+[2020-01-10 07:41:14.439] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features {"startup":false,"extensionId":{"value":"vscode.css-language-features","_lower":"vscode.css-language-features"},"activationEvent":"onLanguage:css"}
+[2020-01-10 07:41:14.439] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/css-language-features/client/dist/cssMain
+[2020-01-10 07:41:14.689] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":false,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"onLanguage:css"}
+[2020-01-10 07:41:14.689] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/emmet/dist/extension
+[2020-01-10 07:41:14.978] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-01-10 07:41:14.978] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2020-01-10 07:41:15.365] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.git","_lower":"vscode.git"},"activationEvent":"*"}
+[2020-01-10 07:41:15.365] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/git/dist/main
+[2020-01-10 07:41:15.886] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-01-10 07:41:15.887] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2020-01-10 07:41:16.213] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-01-10 07:41:16.213] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/search-result/dist/extension.js
+[2020-01-10 07:41:16.741] [exthost] [info] ExtensionService#_doActivateExtension eamodio.gitlens {"startup":true,"extensionId":{"value":"eamodio.gitlens","_lower":"eamodio.gitlens"},"activationEvent":"*"}
+[2020-01-10 07:41:16.742] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/eamodio.gitlens-10.2.0/dist/extension
+[2020-01-10 07:41:23.968] [exthost] [info] ExtensionService#_doActivateExtension jpahnen.dotnet-cli-wrapper {"startup":true,"extensionId":{"value":"jpahnen.dotnet-cli-wrapper","_lower":"jpahnen.dotnet-cli-wrapper"},"activationEvent":"workspaceContainsTimeout:**/*.csproj,**/*.sln"}
+[2020-01-10 07:41:23.969] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/jpahnen.dotnet-cli-wrapper-0.1.0/out/extension
+[2020-01-10 07:41:25.637] [exthost] [error] Activating extension jpahnen.dotnet-cli-wrapper failed due to an error:
+[2020-01-10 07:41:25.640] [exthost] [error] Error: Cannot find module './cliHelper'
+Require stack:
+- /root/.vscode/extensions/jpahnen.dotnet-cli-wrapper-0.1.0/out/cliWrapper.js
+- /root/.vscode/extensions/jpahnen.dotnet-cli-wrapper-0.1.0/out/extension.js
+- /usr/share/code/resources/app/out/vs/loader.js
+- /usr/share/code/resources/app/out/bootstrap-amd.js
+- /usr/share/code/resources/app/out/bootstrap-fork.js
+	at Function.Module._resolveFilename (internal/modules/cjs/loader.js:627:15)
+	at Function.Module._load (internal/modules/cjs/loader.js:531:27)
+	at Function.t._load (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:818:851)
+	at Function.n._load (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:789:164)
+	at Function.i._load (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:785:618)
+	at Module.require (internal/modules/cjs/loader.js:685:19)
+	at n (/usr/share/code/resources/app/out/vs/loader.js:15:524)
+	at Object.<anonymous> (/root/.vscode/extensions/jpahnen.dotnet-cli-wrapper-0.1.0/out/cliWrapper.js:4:21)
+	at Module.o._compile (/usr/share/code/resources/app/out/vs/loader.js:15:749)
+	at Object.Module._extensions..js (internal/modules/cjs/loader.js:798:10)
+	at Module.load (internal/modules/cjs/loader.js:645:32)
+	at Function.Module._load (internal/modules/cjs/loader.js:560:12)
+	at Function.t._load (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:818:851)
+	at Function.n._load (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:789:164)
+	at Function.i._load (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:785:618)
+	at Module.require (internal/modules/cjs/loader.js:685:19)
+	at n (/usr/share/code/resources/app/out/vs/loader.js:15:524)
+	at Object.<anonymous> (/root/.vscode/extensions/jpahnen.dotnet-cli-wrapper-0.1.0/out/extension.js:6:22)
+	at Module.o._compile (/usr/share/code/resources/app/out/vs/loader.js:15:749)
+	at Object.Module._extensions..js (internal/modules/cjs/loader.js:798:10)
+	at Module.load (internal/modules/cjs/loader.js:645:32)
+	at Function.Module._load (internal/modules/cjs/loader.js:560:12)
+	at Function.t._load (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:818:851)
+	at Function.n._load (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:789:164)
+	at Function.i._load (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:785:618)
+	at Module.require (internal/modules/cjs/loader.js:685:19)
+	at require (internal/modules/cjs/helpers.js:16:16)
+	at Function.s [as __$__nodeRequire] (/usr/share/code/resources/app/out/vs/loader.js:32:963)
+	at d._loadCommonJSModule (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:790:289)
+	at d._doActivateExtension (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:694:547)
+	at d._activateExtension (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:693:582)
+	at Object.actualActivateExtension (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:691:534)
+	at d._activateExtension (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:517:21)
+	at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:516:632
+	at Array.map (<anonymous>)
+	at d._activateExtensions (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:516:620)
+	at d.activateById (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:514:709)
+	at d._activateById (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:692:345)
+	at Timeout._onTimeout (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:697:863)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[2020-01-10 07:41:25.640] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.csharp {"startup":true,"extensionId":{"value":"ms-vscode.csharp","_lower":"ms-vscode.csharp"},"activationEvent":"workspaceContainsTimeout:*.csproj,*.sln,*.csx,*.cake,**/*.csproj,**/*.sln,**/*.csx,**/*.cake"}
+[2020-01-10 07:41:25.641] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/ms-vscode.csharp-1.21.9/dist/extension
+[2020-01-10 07:41:25.764] [exthost] [info] ExtensionService#_doActivateExtension tintoy.msbuild-project-tools {"startup":true,"extensionId":{"value":"tintoy.msbuild-project-tools","_lower":"tintoy.msbuild-project-tools"},"activationEvent":"workspaceContainsTimeout:**/*.*proj,**/*.props,**/*.targets"}
+[2020-01-10 07:41:25.764] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/tintoy.msbuild-project-tools-0.3.3/out/src/extension/extension
+[2020-01-10 07:41:26.042] [exthost] [info] eager extensions activated
+[2020-01-10 07:44:27.209] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"extensionId":{"value":"vscode.html-language-features","_lower":"vscode.html-language-features"},"activationEvent":"onLanguage:html"}
+[2020-01-10 07:44:27.210] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain
+[2020-01-10 07:48:27.429] [exthost] [info] ExtensionService#_doActivateExtension vscode.python {"startup":false,"extensionId":{"value":"vscode.python","_lower":"vscode.python"},"activationEvent":"onLanguage:python"}
+[2020-01-10 07:48:27.429] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/python/dist/pythonMain
+[2020-01-10 07:48:27.616] [exthost] [info] ExtensionService#_doActivateExtension ms-python.python {"startup":false,"extensionId":{"value":"ms-python.python","_lower":"ms-python.python"},"activationEvent":"onLanguage:python"}
+[2020-01-10 07:48:27.616] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/ms-python.python-2019.11.50794/out/client/extension

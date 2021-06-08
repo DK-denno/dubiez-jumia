@@ -1,0 +1,20 @@
+[2019-12-25 14:00:10.735] [sharedprocess] [info] main {"machineId":"b0169321991fc3ba7bfa5318de768e219b800c7f896487d14e6fb548cf6d9e7a","windowId":2}
+[2019-12-25 14:00:23.492] [sharedprocess] [info] Installing extension: adrianwilczynski.asp-net-core-snippet-pack
+[2019-12-25 14:00:23.493] [sharedprocess] [info] Installing extension: davidanson.vscode-markdownlint
+[2019-12-25 14:00:23.493] [sharedprocess] [info] Installing extension: ms-vscode.csharp
+[2019-12-25 14:00:45.127] [sharedprocess] [info] Downloaded extension: davidanson.vscode-markdownlint /tmp/3e444700-11e9-4ecc-a706-00379bec4b65
+[2019-12-25 14:00:45.589] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.davidanson.vscode-markdownlint-0.33.0: davidanson.vscode-markdownlint
+[2019-12-25 14:00:45.589] [sharedprocess] [info] Renamed to /root/.vscode/extensions/davidanson.vscode-markdownlint-0.33.0
+[2019-12-25 14:00:45.590] [sharedprocess] [info] Installation completed. davidanson.vscode-markdownlint
+[2019-12-25 14:00:46.000] [sharedprocess] [info] Extensions installed successfully: davidanson.vscode-markdownlint
+[2019-12-25 14:00:48.765] [sharedprocess] [info] Downloaded extension: adrianwilczynski.asp-net-core-snippet-pack /tmp/6fd898fb-0ac8-4244-838a-cb0bb4df9ea8
+[2019-12-25 14:00:48.892] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.adrianwilczynski.asp-net-core-snippet-pack-1.40.0: adrianwilczynski.asp-net-core-snippet-pack
+[2019-12-25 14:00:48.892] [sharedprocess] [info] Renamed to /root/.vscode/extensions/adrianwilczynski.asp-net-core-snippet-pack-1.40.0
+[2019-12-25 14:00:48.894] [sharedprocess] [info] Installation completed. adrianwilczynski.asp-net-core-snippet-pack
+[2019-12-25 14:00:49.181] [sharedprocess] [info] Extensions installed successfully: adrianwilczynski.asp-net-core-snippet-pack
+[2019-12-25 14:00:49.399] [sharedprocess] [info] Downloaded extension: ms-vscode.csharp /tmp/7c503c8b-cd47-4796-a205-cd829ac34e5c
+[2019-12-25 14:00:49.601] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.ms-vscode.csharp-1.21.9: ms-vscode.csharp
+[2019-12-25 14:00:49.601] [sharedprocess] [info] Renamed to /root/.vscode/extensions/ms-vscode.csharp-1.21.9
+[2019-12-25 14:00:49.605] [sharedprocess] [info] Installation completed. ms-vscode.csharp
+[2019-12-25 14:00:49.867] [sharedprocess] [info] Extensions installed successfully: ms-vscode.csharp
+[2019-12-25 14:00:50.618] [sharedprocess] [info] Starting to clean up unused language packs.

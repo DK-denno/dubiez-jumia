@@ -1,0 +1,9 @@
+--------------------------------------------------------------------------------
+Razor.VSCode version 1.0.0-alpha3-3.1.0-preview3.19563.3
+--------------------------------------------------------------------------------
+Razor's trace level is currently set to 'Off'
+ - To change Razor's trace level set 'razor.trace' to 'Off', 'Messages' or 'Verbose' and then restart VSCode.
+ - To report issues invoke the 'Report a Razor issue' command via the command palette.
+-----------------------------------------------------------------------------------------------------------------------------
+
+[Client - 2:00:46 PM] No Razor files detected in workspace, delaying language server start.

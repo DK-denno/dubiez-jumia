@@ -1,0 +1,9 @@
+Installing C# dependencies...
+Platform: linux, x86_64, name=kali, version=2019.4
+
+Downloading package 'OmniSharp for Linux (x64)' (42125 KB).................... Done!
+Validating download...
+Integrity Check succeeded.
+Installing package 'OmniSharp for Linux (x64)'
+
+Downloading package '.NET Core Debugger (linux / x64)' (64045 KB)............

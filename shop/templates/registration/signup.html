@@ -1,0 +1,45 @@
+{% extends 'base/base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <!-- Empty div -->
+        <div class="col-md-4"></div>
+        <div class="col-md-4 col-xs-4 col-sm-4" >
+            <div class="panel panel-default"style="align-self: center;">
+
+                
+
+                <div class="header" style="margin-left: 10%;">
+                    <!-- <img src="https://i.imgur.com/zqpwkLQ.png" /> -->
+                </div>
+               
+                <div class="panel-body">
+
+                    <form action="/sign/" style="width: 100%;" method="POST">
+                        {% csrf_token %}
+                        {% bootstrap_form form%}
+
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary btn-sm" value="Create account">
+                        </div>
+                        
+                        <input type="hidden" name="next" value="{{next}}">
+                        
+                        
+                    </form>
+                  
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-md-4"></div>
+        <!-- empty div -->
+    </div>
+</div>
+
+
+{% endblock %}

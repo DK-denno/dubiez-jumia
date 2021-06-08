@@ -1,0 +1,38 @@
+{% extends 'base/base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+{{block.super}}
+<div style="background:#BDBDBD" class="container">
+    <hr>
+    <div class="page">
+        <div class="page-inner">
+            <div class="page-section row ">
+
+                <div class="col-md-2"></div>
+
+                <!-- .masonry-item -->
+                <div class="masonry-item col-md-8 ">
+                    <header class="btn btn-primary card-header text-center active"> Edit Profile  </header>
+                    <hr>
+                        <form method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {% bootstrap_form user_form %}
+                            {% bootstrap_form profile_form %}
+                            {% bootstrap_form acc_form %}
+                            <div class="row justify-content-end">
+                                <button type="submit" class="btn btn-primary">update</button>
+                            </div>
+                        </form>
+                </div>
+                <!-- /.masonry-item -->
+
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+
+{% endblock %}

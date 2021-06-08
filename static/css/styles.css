@@ -1,0 +1,220 @@
+body{
+    background-color: lightgray;
+}
+.info{
+    background-color: whitesmoke;
+    margin: 10px;
+   
+}
+
+.menu{
+    background-color: whitesmoke;
+    width: 200px;
+    padding: 50px;
+    margin: 10px;
+}
+.details{
+    background-color: lightgrey;
+    width: 300px;
+    padding: 10px;
+    border: 0.5px solid whitesmoke;
+    border-radius: 8px;
+    
+}
+.profheader{
+    background-color: lightgrey;
+    width: 300px;
+    border: 0.5px solid whitesmoke;
+    height: 150px;
+    padding: 10px;
+    /* border-radius: 8px; */
+}
+body{
+    font-family: 'Mali', cursive;
+}
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+
+input[type=search] {
+	background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px rgb(253, 244, 244);
+	padding: 9px 10px 9px 32px;
+	width: 100px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 200px;
+	background-color: #fff;
+	border-color: rgb(99, 238, 120);
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+.button-8{
+    width:100px;
+    height:50px;
+    border:2px solid #34495e;
+    text-align:center;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+    
+  }
+  .button-8 a{
+    font-size:18px;
+    color:#fff;
+    text-decoration:none;
+    line-height:50px;
+    transition:all .5s ease;
+    z-index:2;
+    position:relative;
+  }
+  .eff-8{
+    width:100px;
+    height:50px;
+    border:70px solid #539499;
+    position:absolute;
+    transition:all .5s ease;
+    z-index:1;
+    box-sizing:border-box;
+  }
+  .button-8:hover .eff-8{
+    border:0px solid #577681f8;
+  }
+  .button-8:hover a{
+    color:#0c0c0c;
+  }
+
+
+
+  .blocks-menus {
+    
+    background: white;
+    /* padding: 20px 10px; */
+    text-align: center;
+  }
+  .blocks-menus .primary-menus {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  .blocks-menus .primary-menus i {
+    margin: 0 20px;
+  }
+  .blocks-menus .primary-menus li {
+    list-style: none;
+    float: left;
+    padding: 0 10px;
+  }
+  .blocks-menus .primary-menus li a {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #303030;
+    font-size: 15px;
+    /* font-weight: 600; */
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+  }
+  .blocks-menus .primary-menus li a:hover {
+    color: #D4B062;
+  }
+  .blocks-menus .menus-dropdown:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+  }
+  .blocks-menus .dropdown {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    border: 1px solid #ECECEC;
+    padding: 10px 30px;
+    z-index: 999;
+    background: white;
+    width: 100%;
+    margin-top: 10px;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+  }
+  .blocks-menus .dropdown li {
+    line-height: 30px;
+    float: none;
+  }
+  .blocks-menus .dropdown a {
+    font-size: 11px;
+    font-weight: normal;
+  }
+  .blocks-menus .menus-dropdown {
+    position: relative;
+  }
+  .blocks-menus .menus-megamenus:hover .mega-menus {
+    opacity: 1;
+    visibility: visible;
+  }
+  .blocks-menus .mega-menus {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 15px auto;
+    width: 40%;
+    border: 1px solid #ECECEC;
+    padding: 0 5px;
+    min-height: 50px;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    background-color: lightseagreen;
+    
+  }
+  .blocks-menus .mega-menus li {
+    float: none;
+    text-align: left;
+    padding: 0;
+  }
+  .blocks-menus .section {
+    float: left;
+    margin: 35px 15px;
+  }
+  .blocks-menus .section h3 {
+    font-family: "Lato", sans-serif;
+    position: relative;
+    font-size: 16px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d6d6d6;
+  }
+

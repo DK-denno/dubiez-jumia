@@ -1,0 +1,11 @@
+[2020-01-01 17:36:00.961] [sharedprocess] [info] main {"machineId":"b0169321991fc3ba7bfa5318de768e219b800c7f896487d14e6fb548cf6d9e7a","windowId":2}
+[2020-01-01 17:36:03.095] [sharedprocess] [info] Deleted from disk adrianwilczynski.asp-net-core-snippet-pack /root/.vscode/extensions/adrianwilczynski.asp-net-core-snippet-pack-1.40.0
+[2020-01-01 17:36:03.358] [sharedprocess] [info] Deleted from disk adrianwilczynski.asp-net-core-snippet-pack /root/.vscode/extensions/adrianwilczynski.asp-net-core-snippet-pack-1.41.0
+[2020-01-01 17:36:04.026] [sharedprocess] [info] Deleted from disk tintoy.msbuild-project-tools /root/.vscode/extensions/tintoy.msbuild-project-tools-0.3.2
+[2020-01-01 17:36:11.404] [sharedprocess] [info] Installing extension: adrianwilczynski.asp-net-core-snippet-pack
+[2020-01-01 17:36:18.989] [sharedprocess] [info] Downloaded extension: adrianwilczynski.asp-net-core-snippet-pack /tmp/6ff60bf8-e357-4d9c-a12b-3dbdb6706444
+[2020-01-01 17:36:19.028] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.adrianwilczynski.asp-net-core-snippet-pack-1.44.0: adrianwilczynski.asp-net-core-snippet-pack
+[2020-01-01 17:36:19.028] [sharedprocess] [info] Renamed to /root/.vscode/extensions/adrianwilczynski.asp-net-core-snippet-pack-1.44.0
+[2020-01-01 17:36:19.028] [sharedprocess] [info] Installation completed. adrianwilczynski.asp-net-core-snippet-pack
+[2020-01-01 17:36:19.113] [sharedprocess] [info] Extensions installed successfully: adrianwilczynski.asp-net-core-snippet-pack
+[2020-01-01 17:36:40.955] [sharedprocess] [info] Starting to clean up unused language packs.
